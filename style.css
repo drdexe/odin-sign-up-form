@@ -5,6 +5,12 @@
     url("fonts/Norse-Bold.woff") format("woff");
 }
 
+:root {
+  --font-big: clamp(2rem, 6vw, 8rem);
+  --font-normal: clamp(.75rem, 1vw, 3rem);
+  --font-small: clamp(.5rem, 1vw, 1rem);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,18 +34,18 @@ h1 {
   background-color: rgba(0, 0, 0, .5);
   color: white;
   text-align: center;
-  font-size: clamp(2rem, 6vw, 8rem);
+  font-size: var(--font-big);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 20vh;
   padding: .25rem;
 }
 
 footer {
   color: #ccc;
   text-align: center;
-  font-size: clamp(.4rem, 1vw, 1.5rem);
+  font-size: var(--font-small);
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -52,4 +58,84 @@ a {
 
 main {
   flex: 3;
+}
+
+main > div:first-child {
+  height: 32.5vh;
+  font-weight: bold;
+  font-size: var(--font-normal);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main > div:first-child > p {
+  max-width: 65ch;
+  margin-bottom: 1em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.form-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+  padding: 1em 1.5em;
+  font-size: var(--font-normal);
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .5em;
+}
+
+.input-container > div {
+  width: 50%;
+  font-size: var(--font-small);
+  color: #555;
+  margin-bottom: .5em;
+}
+
+input {
+  display: block;
+  width: 75%;
+  font-size: var(--font-small);
+  padding: .25em;
+}
+
+input:focus {
+  border: 1px solid blue;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+input:invalid {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  font-size: var(--font-small);
+  font-weight: bold;
+  border: 1px solid #596d48;
+  border-radius: 3px;
+  padding: 1em 3em;
+  margin: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+main > div:last-child {
+  font-size: var(--font-small);
+  margin-left: 1.5rem;
+}
+
+main > div:last-child > a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
 }
