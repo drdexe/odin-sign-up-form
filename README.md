@@ -2,7 +2,7 @@
 
 ### [The Odin Project: Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
 
-Non-functional form design with frontend validation.
+Non-functional form design with some frontend validation.
 
 Replica of:
 
