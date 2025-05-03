@@ -24,7 +24,10 @@ body {
 }
 
 header {
-  background: 0% 0% / 100% 100% url("images/background.jpg");
+  background:
+    0% 0% / 100% 100% url("images/background.jpg"),
+    0% 0% / 100% 100% url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    green;
   flex: 2;
   position: relative;
 }
