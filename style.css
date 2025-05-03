@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  background: 0% 0% / 100% 100% url("/images/background.jpg");
+  background: 0% 0% / 100% 100% url("images/background.jpg");
   flex: 2;
   position: relative;
 }
